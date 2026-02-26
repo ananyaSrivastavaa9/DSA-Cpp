@@ -1,25 +1,16 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 int main(){
-    int size = 3;
-    int price[3];
-    for (int i =0; i < size; i++){
-        cin >> price[i];
+    int nums[] = {7,9,74,-8,63,-66,21};
+    int size = 7;
+    int smallest = INT_MAX;
+    int largest = INT_MIN;
+    for (int i=0; i < size; i++) {
+        smallest = min(nums[i], smallest);
+        largest = max(nums[i], largest);
     }
-    if (price[0] > price[1] && price[0] > price[2]) {
-        cout << price[0] << " is largest" << endl;
-    } else if (price[1] > price[0] && price[1] > price[2]) {
-        cout << price[1] << " is largest" << endl;
-    } else {
-        cout << price[2] << " is largest" << endl;
-    }
-
-    if (price[0] < price[1] && price[0] < price[2]) {
-        cout << price[0] << " is smallest" << endl;
-    } else if (price[1] < price[0] && price[1] < price[2]) {
-        cout << price[1] << " is smallest" << endl;
-    } else {
-        cout << price[2] << " is smallest" << endl;
-    }
+    cout << "Smallest is: " << smallest << endl;
+    cout << "Largest is: " << largest << endl;
     return 0;
 }
