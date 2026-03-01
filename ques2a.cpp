@@ -1,3 +1,5 @@
+// WAF to swap the max and min number of the array
+
 #include <iostream>
 using namespace std;
 void SwapMaxMin(int arr[], int size) {
