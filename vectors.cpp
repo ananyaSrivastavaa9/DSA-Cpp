@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     // vectors syntax
 
-    // vector <int> vec; //size 0
+    // vector <int> vec; //size 0 default
     // cout << vec[0] << endl; //segmentation fault
 
     // vector <int> vec = {1,2,3};
@@ -18,6 +18,6 @@ int main() {
     // cout << vec[2] << endl;
     // cout << vec[3] << endl;
     // cout << vec[4] << endl;
-    
+
     return 0;
 }
