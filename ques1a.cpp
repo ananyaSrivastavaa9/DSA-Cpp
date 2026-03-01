@@ -1,3 +1,4 @@
+// WAF to calculate sum & product of all numbers in an array
 #include <iostream>
 using namespace std;
 
