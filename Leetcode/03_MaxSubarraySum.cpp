@@ -1,5 +1,6 @@
 // By Brute-Force Approach
 // Time Complexity - O(n^2)
+// for O(n) time complexity apply kadane's Algorithm
 #include<iostream>
 #include<vector>
 #include<climits>
