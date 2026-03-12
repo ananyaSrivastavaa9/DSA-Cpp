@@ -1,5 +1,6 @@
 // Brute Force Approach
 // Time Complexity - O(n^2)
+// Approach 1
 
 // class Solution {
 // public:
@@ -53,6 +54,7 @@ int main() {
 
 // Sorting 
 // Time Complexity - O(nlogn)
+// Approach 2
 
 // class Solution {
 // public:
