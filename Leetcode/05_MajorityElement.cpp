@@ -43,7 +43,7 @@ int majorityElement(vector<int>& nums) {
             count--;
         }
     }
-
+    
     return candidate;  // the majority element
 }
 
