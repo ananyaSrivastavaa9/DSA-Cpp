@@ -1,3 +1,4 @@
+// 1st
 // Moore's Voting Algorithm
 // time complexity - O(n)
 
@@ -53,7 +54,7 @@ int main() {
     return 0;
 }
 
-
+// 2nd
 // Brute Force Approach
 // Time Complexity - O(n^2)
 // Approach 1
@@ -108,6 +109,7 @@ int main() {
 //     return 0;
 // }
 
+// 3rd
 // Sorting 
 // Time Complexity - O(nlogn)
 // Approach 2
