@@ -11,7 +11,7 @@ Even in AI & Machine Learning, DSA is very important because:
 Efficient algorithms improve model performance
 Data structures help manage large datasets
 Strong DSA skills are required for interviews & coding rounds
-Concepts like recursion, DP, graphs are used in ML internally
+Concepts like recursion, DP, and graphs are used in ML internally
 
 What This Repository Contains
 
@@ -52,15 +52,15 @@ Language & Tools
 C++
 VS Code (for practice)
 
-Goals of This Repository :-
-Build strong DSA foundation
+Goals of This Repository:-
+Build a strong DSA foundation
 Improve logical thinking
 Prepare for internships & placements
 Support future learning in AI & ML
 Maintain clean and understandable code
 
-How to Use This Repository :-
-Start from Basics
+How to Use This Repository:-
+Start from the basics
 Understand the logic before code
 Practice each program yourself
 Analyze time & space complexity
