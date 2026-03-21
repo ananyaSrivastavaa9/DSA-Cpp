@@ -1,5 +1,4 @@
 # Data Structures & Algorithms in C++
-BTech CSE (AI & Machine Learning) | Beginner Friendly
 
 Welcome to my DSA in C++ repository!
 I am a BTech Computer Science Engineering (AI & Machine Learning) Student, and this repository documents my learning journey of Data Structures and Algorithms using C++ from scratch.
