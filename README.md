@@ -1,4 +1,4 @@
-Data Structures & Algorithms in C++
+# Data Structures & Algorithms in C++
 BTech CSE (AI & Machine Learning) | Beginner Friendly
 
 Welcome to my DSA in C++ repository!
