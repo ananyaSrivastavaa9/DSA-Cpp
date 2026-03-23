@@ -15,7 +15,7 @@ bool isvalid(vector<int> &arr, int n, int m, int maxallowedpages) {
             pages = arr[i];
         }
     }
-    return students >m ? false : true;
+    return students > m ? false : true;
 }
 int allocatebooks(vector<int> &arr, int n, int m) {
     if(m > n) {
