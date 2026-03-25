@@ -3,28 +3,29 @@
 #include<climits>
 using namespace std;
 bool is_possible(vector<int> &arr, int n, int m, int maxallowedtime) {
-    int painters = 1;
+    int painter = 1;
     int time = 0;
-    for (int i = 0; i < n; i++) {
-        if (arr[i]>maxallowedtime) {
-            return false;
-        }
+    for(int i = 0; i < n; i++) {
         if (time + arr[i] <= maxallowedtime) {
             time += arr[i];
         } else {
-            painters++;
+            painter++;
             time = arr[i];
         }
     }
-    if (painters<= m) {
+    if (painter <= m) {
         return true;
     } else {
         return false;
     }
 }
 
-int PainterPartition(vector<int> &arr, int n, int m) {
-    int sum = 0, maxVal = INT_MIN;
+int PainterPartition(vector<int>arr, int n, int m) {
+    int sum = 0;
+    int maxVal = INT_MIN;
+    if (m > n) {
+        return false;
+    }
     for(int i = 0; i < n; i++) {
         sum += arr[i];
         maxVal = max(maxVal, arr[i]);
@@ -32,10 +33,7 @@ int PainterPartition(vector<int> &arr, int n, int m) {
     int st = maxVal;
     int end = sum;
     int ans = -1;
-    if (m > n) {
-        return -1;
-    }
-    while(st<=end) {
+    while(st <= end) {
         int mid = st + (end - st) / 2;
         if (is_possible(arr,n,m,mid)) {
             ans = mid;
@@ -48,9 +46,9 @@ int PainterPartition(vector<int> &arr, int n, int m) {
 }
 
 int main() {
-    vector<int>arr = {40,30,10,20};
-    int n = 4;
+    vector <int> arr = {40,30,10,20};
     int m = 2;
+    int n = 4;
     cout << PainterPartition(arr,n,m) << endl;
     return 0;
 }
