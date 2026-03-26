@@ -25,6 +25,7 @@ int AggressiveCow(vector<int>arr, int n, int c) {
     int st = 1;
     int end = arr[n-1] - arr[0]; //maximum possible distance (8) - in this case
     int ans = -1;
+
     // int minDistance = 1;
     // int minVal = INT_MAX;
     // int maxVal = INT_MIN;
@@ -35,6 +36,7 @@ int AggressiveCow(vector<int>arr, int n, int c) {
     // int maxdistance = maxVal - minVal;
     // int st = minDistance; 
     // int end = maxdistance;
+    
     while(st  <=end) {
         int mid = st + (end - st)/2;
         if (is_possible(arr,n,mid,c)) {
