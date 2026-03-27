@@ -3,7 +3,6 @@
 #include<climits>
 using namespace std;
 void selectionsort(int arr[], int n) {
-    bool is_swap = false;
     for(int i = 0; i < n - 1; i++) {
         int SmallestElement = i;
         for(int j = i+1; j < n; j++) {
@@ -12,7 +11,6 @@ void selectionsort(int arr[], int n) {
             }
         }
         swap(arr[i], arr[SmallestElement]);
-        is_swap = true;
     }
 }
 int printarr(int arr[], int n) {
