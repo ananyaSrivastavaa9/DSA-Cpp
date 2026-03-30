@@ -1,4 +1,4 @@
-// leetcode - 31
+// leetcode - question 31
 // Optimal Approach
 // Time complexity - O(n)
 // Space complexity - O(1)
@@ -26,7 +26,7 @@ public:
             return;
         }
         
-        // Step 3: Find next greater element
+        // Step 3: Find the next greater element
         for(int i = n - 1; i > pivot; i--) {
             if(nums[i] > nums[pivot]) {
                 swap(nums[i], nums[pivot]);
@@ -34,7 +34,7 @@ public:
             }
         }
 
-        // Step 4: Reverse right part
+        // Step 4: Reverse the right part
         int i = pivot + 1;
         int j = n - 1;
         while(i <= j) {
