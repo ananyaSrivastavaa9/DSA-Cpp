@@ -11,8 +11,10 @@ int main() {
 
     // loop : 0 to size - 1
     int size = 6;
+    cout << "[";
     for (int i = 0; i < size; i++){
-        cout << marks[i] << endl;
+        cout << " " << marks[i];
     }
+    cout << "]";
     return 0;
 }
