@@ -22,7 +22,7 @@ int main() {
     // to access the front element - front()
     cout << "Top element is: " << q.front() << endl;
 
-    // empty() to check if the stack is empty or not 
+    // empty() to check if the queue is empty or not 
 
     while(!q.empty()) {
         cout << q.front() << " ";
