@@ -1,169 +1,196 @@
-# 🚀 DSA-Cpp
+# 🚀 Data Structures & Algorithms in C++
 
-> **Data Structures & Algorithms in C++** — A clean, beginner-friendly, and interview-ready collection of DSA implementations. Built for learning, competitive programming, and placement prep.
+<div align="center">
+  <img src="https://img.shields.io/badge/Language-C%2B%2B%2017-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++ Standard" />
+  <img src="https://img.shields.io/badge/Domain-DSA%20%26%20AI%2FML-FF2D55?style=for-the-badge" alt="Domain Focus" />
+  <img src="https://img.shields.io/github/license/ananyaSrivastavaa9/DSA-Cpp?style=for-the-badge&color=blue" alt="License" />
+  <img src="https://img.shields.io/github/stars/ananyaSrivastavaa9/DSA-Cpp?style=for-the-badge&color=yellow" alt="Stars" />
+</div>
 
-[![Language](https://img.shields.io/badge/C%2B%2B-17-blue?logo=c++)](https://isocpp.org)
-[![License](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
-[![Status](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/ananyaSrivastavaa9/DSA-Cpp)
-⭐ If this helped you, give it a star!
+<br />
 
----
-
-## 📖 About
-
-This repository documents my journey mastering **Data Structures & Algorithms using C++**. Every solution is:
-
-- ✅ **Clean & readable** — beginner-friendly code
-- ✅ **Commented** — logic explained step-by-step
-- ✅ **Annotated** — time & space complexity included
-- ✅ **Tested** — works with sample inputs
-
-Perfect for:
-- 🎯 Interview & placement prep
-- 🏆 Competitive programming practice
-- 🧠 Strengthening fundamentals for AI/ML
+> **Welcome to the Hub!** A clean, beginner-friendly, and interview-ready collection of Core Data Structures and Algorithms implemented from scratch. This repository serves as a personal codebase log designed for high-performance engineering, competitive programming, and technical placement preparation.
 
 ---
 
-## 🗂️ Repository Structure
+## 📖 Key Repository Pillars
 
-| Folder | What's Inside |
-|--------|---------------|
-| `Arrays/` | Array problems, linear/binary search, utilities |
-| `BasicsOfCpp/` | C++ foundation: I/O, loops, functions, pointers |
-| `Leetcode/` | Selected LeetCode problems (tagged by number) |
-| `Pattern/` | Pattern printing challenges |
-| `STL/` | C++ STL algorithms & container examples |
-| `Strings/` | String algorithms & manipulation utilities |
-| `Vectors/` | Vector-based implementations |
-| `pointers/` | Pointer examples & valid comparisons |
-| `sorting/` | Sorting algorithms (optimized) |
+Every code file added here adheres to production-grade study principles:
+
+* 🎓 **Clean & Documented:** Written with clear syntax, variable names, and logical layouts.
+* 💡 **Inline Breakdown:** Tricky logical steps explained right alongside the implementation.
+* 📊 **Complexity Annotations:** Explicitly tracked Time and Space analysis metrics (`O(N)`, `O(log N)`, etc.).
+* 🛠️ **Fully Executable:** Verified to compile seamlessly using modern standard environments.
 
 ---
 
-## 🛠️ Installation & Running
+## 💡 Why Core DSA Matters for AI & ML
 
-```bash
-# 1. Clone the repo
-git clone https://github.com/ananyaSrivastavaa9/DSA-Cpp.git
-cd DSA-Cpp
+As a Computer Science Engineering student specialized in **Artificial Intelligence & Machine Learning**, building optimized software is essential:
 
-# 2. Compile a file (C++17)
-g++ -std=c++17 solution.cpp -O2 -o sol
+* **Data Engineering:** High-fidelity data structures power the processing blocks of massive machine learning datasets.
+* **Model Efficiency:** Core concepts like recursion, advanced sorting, and graph pipelines directly control deep neural layer backends and frameworks.
+* **Resource Management:** Minimizing execution time and memory profiles cuts down training compute costs and optimizes execution speed.
 
-# 3. Run
-./sol
+---
+
+## 🗂️ Repository Blueprint
+
+The workspace is organized into modular paths to make revision quick and efficient:
+
+| Directory Module      | Structural Contents                                                   | Learning Target          |
+| --------------------- | --------------------------------------------------------------------- | ------------------------ |
+| 📁 **`BasicsOfCpp/`** | Basic I/O, loop counters, functions, primitive arrays                 | Syntax Foundations       |
+| 📁 **`Pattern/`**     | Geometric rendering problems & nested tracking configurations         | Pure Logic Building      |
+| 📁 **`Arrays/`**      | Linear storage layouts, bounds searching, allocation tricks           | Contiguous Containers    |
+| 📁 **`Vectors/`**     | Dynamic array reallocation setups and sequence tracking               | Memory Scalability       |
+| 📁 **`Strings/`**     | Text manipulation algorithms, processing pipelines, character parsing | Tokenization Patterns    |
+| 📁 **`Pointers/`**    | System memory addresses, dereferencing, comparisons                   | Native Memory Management |
+| 📁 **`Sorting/`**     | Insertion, Bubble, and Selection Sort implementations                 | Algorithmic Strategy     |
+| 📁 **`STL/`**         | Standard algorithms and utility functions                             | Enterprise Efficiency    |
+| 📁 **`Leetcode/`**    | Curated coding interview problems                                     | Real-World Interviews    |
+
+---
+
+## 🎯 Recommended Learning Path
+
+```text
+BasicsOfCpp
+    ↓
+Arrays
+    ↓
+Strings
+    ↓
+Vectors
+    ↓
+Pointers
+    ↓
+STL
+    ↓
+Sorting
+    ↓
+Stacks & Queues
+    ↓
+Linked Lists
+    ↓
+LeetCode Challenges
 ```
 
 ---
 
-## 📚 Learning Path (Recommended Order)
-BasicsOfCpp → Arrays → Strings → Vectors → Pointers → STL → sorting → Core DS (Stack, Queue, Linked Lists) → Leetcode → Patterns → Advanced (DP, Graphs)
+## 💻 Highlighted Algorithm Snapshots
 
-### Each file includes:
-1. Problem description
-2. Approach & logic
-3. Complexity analysis: **Time: O(...)** | **Space: O(...)**
-4. Sample input/output (where applicable)
+### 1️⃣ Optimized Binary Search
 
----
-
-## 💡 Quick Examples
-
-### Binary Search
 ```cpp
-// Time: O(log n) | Space: O(1)
+// Time Complexity: O(log n)
+// Space Complexity: O(1)
+
 int binarySearch(vector<int>& arr, int target) {
     int left = 0, right = arr.size() - 1;
+
     while (left <= right) {
         int mid = left + (right - left) / 2;
-        if (arr[mid] == target) return mid;
-        else if (arr[mid] < target) left = mid + 1;
-        else right = mid - 1;
+
+        if (arr[mid] == target)
+            return mid;
+        else if (arr[mid] < target)
+            left = mid + 1;
+        else
+            right = mid - 1;
     }
+
     return -1;
 }
 ```
 
-### Bubble Sort (Optimized)
+### 2️⃣ Adaptive Bubble Sort
+
 ```cpp
-// Time: O(n²) | Space: O(1)
+// Time Complexity: O(n²) Worst Case
+// Time Complexity: O(n) Best Case
+// Space Complexity: O(1)
+
 void bubbleSort(vector<int>& arr) {
     int n = arr.size();
+
     for (int i = 0; i < n - 1; i++) {
         bool swapped = false;
+
         for (int j = 0; j < n - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 swap(arr[j], arr[j + 1]);
                 swapped = true;
             }
         }
-        if (!swapped) break;
+
+        if (!swapped)
+            break;
     }
 }
 ```
 
 ---
 
-## 🤝 Contributing
+## 🛠️ Local Environment Execution
 
-This is a **learning-focused** repo, but contributions are welcome!
+### 1️⃣ Clone Repository
 
-### What I welcome:
-- 🐛 Bug fixes & corrections
-- ⚡ Optimizations (better time/space)
-- 📝 Enhanced explanations or test cases
-- 🆕 New problems (organized in existing folders)
-
-### How to contribute:
 ```bash
-1. Fork the repo
-2. Create a branch: git checkout -b feat/your-change
-3. Make changes + add comments & complexity
-4. Open a PR with description
+git clone https://github.com/ananyaSrivastavaa9/DSA-Cpp.git
+cd DSA-Cpp
+```
+
+### 2️⃣ Compile & Run
+
+```bash
+g++ -std=c++17 sorting/insertion_sort.cpp -O2 -o output_runner
+./output_runner
 ```
 
 ---
 
-## 🎨 Coding Style
+## 🎨 Coding Standards
 
-- **Standard**: C++17
-- **Indentation**: 4 spaces
-- **Naming**: Meaningful variable & function names
-- **Comments**: Explain tricky logic + complexity at top of file
-- **Functions**: Short, focused, reusable
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+* **Language Standard:** ISO C++17
+* **Code Formatting:** Clean 4-space indentation
+* **Naming Convention:** camelCase variables and functions
+* **Documentation:** Complexity analysis included where applicable
+* **Goal:** Readable, interview-ready, and beginner-friendly implementations
 
 ---
 
-## 👤 Author & Contact
+## 🤝 Contributing
 
-**Ananya Srivastava**  
-🎓 BTech CSE (AI & Machine Learning)  
-�GitHub: [ananyaSrivastavaa9](https://github.com/ananyaSrivastavaa9)  
-📧 Email: *(add your email here)*  
+Contributions are always welcome.
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature/OptimizedLogic
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Refactor search boundaries"
+```
+
+4. Push to GitHub
+
+```bash
+git push origin feature/OptimizedLogic
+```
+
+5. Open a Pull Request
 
 ---
 
-## 🙏 Acknowledgements
+## 🌟 Show Your Support
 
-Thanks to the open-source community, online judges, and tutorial creators that inspired and helped during this learning journey.
+If this repository helps you learn Data Structures & Algorithms, prepare for interviews, or strengthen your problem-solving skills, consider giving it a ⭐.
 
----
+Every star motivates me to keep building and sharing better resources with the community.
 
-## 🌟 Support
-
-If you find this repository helpful:
-
-- ⭐ **Give it a star**
-- 🦊 **Fork it** for your practice
-- 📢 **Share** with fellow learners
-
----
-
-> **Built with passion for learning DSA. Happy coding! 🚀**
+**Happy Coding! 🚀**
